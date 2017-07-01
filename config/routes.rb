@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get 'welcome/index'
   # sets the welcome controller index action to the route of our application
   root 'welcome#index'
+
+  get '*path' => redirect('/')
 end
