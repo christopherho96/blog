@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 gem  'redcarpet', '~> 3.4.0'
 gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
