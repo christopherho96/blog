@@ -40,7 +40,6 @@ gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 4.2'
-gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -62,4 +61,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production do
   gem 'pg';
   gem 'rails_12factor'
+  gem 'paperclip', '~> 4.3', '>= 4.3.6'
 end
