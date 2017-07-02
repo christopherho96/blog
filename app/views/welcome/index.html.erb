@@ -1,11 +1,11 @@
-
+<div class= "main-area-welcome">
   <div class="wrapper wrapper_padding clearfix">
     <div class="col-1 about homepage_content">
       <h2>About</h2>
       <hr>
-      <p>Lorem ipsum dolor sit amet &amp; consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>My name is Christopher Ho and I am currently a 2A Mechnical Engineering student at the University of Waterloo.</p>
+      <p>Like many of my fellow engineering colleagues, I have a passion for creating something new, innovative and unique. My first programming language I learned was during my first year which was an introduction to programming course using C#. Since then, I have developed a passion for programming and taken the initiative to developing my programming skills outside of my academic course load. My practice varies from web development to iOS and Android appplication development. I hope to one day gain practical experience in the application development work field.</p>
+      <p>My hobbies consist of basketball, travelling and being a fitness enthusiast. In addition, I am addicted to poker. If you ever need an extra player at your table, send me a message!</p>
     </div>
 
     <div class="col-2 homepage_content">
@@ -19,15 +19,36 @@
       <% end %>
     </div>
 
-    <div class="col-3 homepage_content">
+  <!--  <div class="col-3 homepage_content">
       <h2>Projects</h2>
       <hr>
 
       <% @projects.each do |project| %>
-        <h3><a href="#"><%= link_to project.title, project %></a></h3>
-        <p class="date"><%= project.created_at.strftime("%A, %b %d")%></p>
+      <div class = "project">
+          <img class= "thumbnail"><%= link_to image_tag(project.image.url(:medium)) , project%></p>
+          <div class = "overlay">
+            <h3><a href="#"><%= link_to project.title, project %></a></h3>
+            <p class="date"><%= project.created_at.strftime("%A, %b %d")%></p>
+          </div>
+        </div>
       <% end %>
-
-    </div>
+    </div> -->
 
   </div>
+
+  <div class="wrapper homepage_content">
+    <h2>Projects</h2>
+    <hr>
+
+    <% @projects.each do |project| %>
+    <div class = "project">
+        <img class= "thumbnail"><%= link_to image_tag(project.image.url(:medium)) , project%></p>
+        <div class = "overlay">
+          <h3><a href="#"><%= link_to project.title, project %></a></h3>
+          <!--<p class="date"><%= project.created_at.strftime("%A, %b %d")%></p>-->
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>

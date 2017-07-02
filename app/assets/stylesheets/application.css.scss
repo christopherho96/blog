@@ -16,8 +16,16 @@ body{
 }
 
 .wrapper{
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+}
+
+.transbox{
+  margin: 30px;
+   background-color: #ffffff;
+   border: 1px solid black;
+   opacity: 0.6;
+   filter: alpha(opacity=60);
 }
 
 .skinny_wrapper{
@@ -188,3 +196,4 @@ input[type="submit"], button{
 
 @import 'welcome';
 @import 'post_projects';
+@import 'contacts';
