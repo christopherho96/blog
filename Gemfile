@@ -40,7 +40,8 @@ gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 4.2'
-gem 'aws-sdk', '~> 2.10', '>= 2.10.7'
+gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk-v1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
