@@ -1,5 +1,5 @@
-.main-area-welcome{
-    background-image: url("background.jpeg");
+.about{
+    background-image: url("about.jpeg");
     background-size: cover;
 }
 
@@ -9,12 +9,12 @@
 
 .col-1{
   width: 80%;
-  padding: 0 5% 0 2.5%;
+  padding: 0 3% 0 3%;
 }
 
 .col-2, .col-3{
   width: 20%;
-  padding: 0 2.5%;
+  padding: 0 3% 0 3%;
 }
 
 .homepage_content{
@@ -49,15 +49,6 @@
   }
 }
 
-.about{
-  padding: 0 7.5% 0 0;
-  a{
-    color: $highlight;
-    font-weight: 700;
-    text-decoration: none;
-  }
-}
-
 .overlay {
   position: absolute;
   text-align: center;
@@ -76,14 +67,38 @@
   opacity: 0.9;
 }
 
-.project {
-  position: relative;
-  width: 100%;
-  margin-bottom: 3rem;
+.blog{
 }
 
-.thumbnail {
+.projects {
+}
+
+.icon {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.post_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .article {
+        max-width: 33%;
+        text-align: center;
+    }
+}
+
+.img-circular{
+ width: 250px;
+ height: 250px;
+ background-size: cover;
+ display: block;
+ border-radius: 200px;
+ -webkit-border-radius: 200px;
+ -moz-border-radius: 200px;
+}
+
+.portrait-photo{
+  padding: 3rem 0 3rem 0;
 }

@@ -6,7 +6,7 @@
       <% @projects.each do |project| %>
       <div class="post">
         <!--<p class="date"><%= project.created_at.strftime('%A, %B %d')%></p>-->
-        <img class= "thumbnail"><%= image_tag(project.image.url(:large))%></p>
+        <img class= "icon"><%= image_tag(project.image.url(:medium))%></p>
         <h2><a href="#"><%= link_to project.title, project %></a></h2>
         <hr>
       </div>

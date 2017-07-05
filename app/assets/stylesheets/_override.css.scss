@@ -1,10 +1,4 @@
-// 16px = 1rem
-
 @import 'normalize';
-@import 'bootstrap';
-@import 'bootstrap-sprockets';
-@import 'override.css.scss';
-
 $white: #ffffff;
 $dark: #424652;
 $light: #9a9da4;
@@ -17,9 +11,8 @@ $border: #e9e9e9;
 }
 
 body{
-  font-family: 'Raleway', sans-serif !important;
+  font-family: 'Raleway', sans-serif;
 }
-
 
 .wrapper{
   width: 80%;
@@ -69,34 +62,34 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 }
 
 h1{
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 h2{
-  font-size: 32px;
+  font-size: 2rem;
 
 }
 
 h3{
-  font-size: 28px;
+  font-size: 1.75rem;
 
 }
 h4{
-  font-size: 22px;
+  font-size: 1.375rem;
 
 }
 h5{
-  font-size: 20rem;
+  font-size: 1.25rem;
 
 }
 
 h6{
-  font-size: 16px;
+  font-size: 1rem;
 
 }
 
 p, li{
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.75;
 }
 
@@ -123,7 +116,7 @@ hr{
       color: $dark;
       text-decoration: none;
       margin: 0 1rem;
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 }
@@ -155,7 +148,7 @@ hr{
   border-top: 1px solid $border;
   .copyright{
     float: left;
-    font-size: 16px;
+    font-size: .9em;
     margin: 0;
   }
   nav{
