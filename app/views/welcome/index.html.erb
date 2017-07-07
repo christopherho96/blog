@@ -1,3 +1,33 @@
+<div class ="banner">
+  <div class = "overlay">
+  </div>
+    <h1>CHRISTOPHER HO</h1>
+    <p>Engineering Student at the University of Waterloo</p>
+
+    <%= link_to "Resume", asset_path("resume.pdf"), target: "_blank", class:'banner_btn' %>
+
+    <div class="row_icons">
+      <div class ="row_cell">
+              <%= render inline: (render file: Rails.root.join('app', 'assets', 'images', 'user.svg'), class: 'svg') %>
+        <p>About Me</p>
+      </div>
+
+      <div class ="row_cell">
+        <%= link_to (render inline: (render file: Rails.root.join('app', 'assets', 'images', 'code.svg'), class: 'svg')), projects_path %>
+        <p>Recent Projects</p>
+      </div>
+
+      <div class ="row_cell">
+                <%= link_to (render inline: (render file: Rails.root.join('app', 'assets', 'images', 'keyboard.svg'), class: 'svg')), posts_path %>
+        <p>Blog</p>
+      </div>
+
+    </div>
+</div>
+
+<!--ABOUT SECTION -->
+
+<!--
 <div class = "about">
   <div class="wrapper wrapper_padding clearfix">
       <div class="col-1 homepage_content">
@@ -13,23 +43,10 @@
         <%= image_tag("portrait.jpg", :alt => "rss feed", :class=> "img-circular") %>
       </div>
     </div>
-  <!--  <div class="col-3 homepage_content">
-      <h2>Projects</h2>
-      <hr>
-
-      <% @projects.each do |project| %>
-      <div class = "project">
-          <img class= "thumbnail"><%= link_to image_tag(project.image.url(:medium)) , project%></p>
-          <div class = "overlay">
-            <h3><a href="#"><%= link_to project.title, project %></a></h3>
-            <p class="date"><%= project.created_at.strftime("%A, %b %d")%></p>
-          </div>
-        </div>
-      <% end %>
-    </div> -->
 
   </div>
-</div>
+</div>-->
+
   <!--
   <div class="wrapper homepage_content">
     <h2>Projects</h2>
@@ -46,28 +63,48 @@
     <% end %>
   </div>-->
 
+<!-- BLOG SHIT
+
 <div class ="wrapper wrapper_padding clearfix ">
 
   <div class="col-2 blog homepage_content">
     <h2>Blog Posts</h2>
     <hr>
 
-    <!-- Loops through all posts and display them in descending order of date-->
+
     <% @posts.each do |post| %>
       <h3><a href="#"><%= link_to post.title, post %></a></h3>
       <p class="date"><%= post.created_at.strftime("%A, %b %d")%></p>
     <% end %>
   </div>
+
+-->
+
+<!-- PROJECTS SHIT
   <div class="col-1 wrapper wrapper_padding homepage_content projects">
     <h2>Recent Projects</h2>
     <hr style>
     <div class="post_container">
         <% @projects.each do |project| %>
-          <div class="article">
-            <h3 class="post_title"><%= link_to image_tag(project.image.url(:medium)) , project%></h3>
-            <h3><a href="#"><%= link_to project.title, project %></a></h3>
-          </div>
+
+        <article class="card">
+        <header class="card__thumb">
+          <a href="#">
+            <%= link_to image_tag(project.image.url(:icon)), project%>
+          </a>
+        </header>
+        <div class="card__date">
+          <%= link_to project do %><span class="fa fa-angle-right fa-2x"></span><% end %>
+        </div>
+        <div class="card__body">
+          <h2 class="card__title"><a href="#"><%= link_to project.title, project %></a></h2>
+          <p class="card__description">
+            With a warning label this big, you know they gotta be fun! This is the worst part. The calm before the battle. No! The cat shelter's on to me. Yes, I saw. You were doing well, until everyone died. Daylight and everything.
+          </p>
+        </div>
+      </article>
+
         <% end %>
     </div>
   </div>
-</div>
+</div>-->
