@@ -1,28 +1,31 @@
-<div class ="banner">
-  <div class = "overlay">
-  </div>
-    <h1>CHRISTOPHER HO</h1>
-    <p>Engineering Student at the University of Waterloo</p>
-
-    <%= link_to "Resume", asset_path("resume.pdf"), target: "_blank", class:'banner_btn' %>
-
-    <div class="row_icons">
-      <div class ="row_cell">
-              <%= render inline: (render file: Rails.root.join('app', 'assets', 'images', 'user.svg'), class: 'svg') %>
-        <p>About Me</p>
-      </div>
-
-      <div class ="row_cell">
-        <%= link_to (render inline: (render file: Rails.root.join('app', 'assets', 'images', 'code.svg'), class: 'svg')), projects_path %>
-        <p>Recent Projects</p>
-      </div>
-
-      <div class ="row_cell">
-                <%= link_to (render inline: (render file: Rails.root.join('app', 'assets', 'images', 'keyboard.svg'), class: 'svg')), posts_path %>
-        <p>Blog</p>
-      </div>
-
+<div class = "content">
+  <div class ="banner">
+    <div class = "overlay">
     </div>
+      <h1>CHRISTOPHER HO</h1>
+      <p>Engineering Student at the University of Waterloo</p>
+
+      <%= link_to "Resume", asset_path("resume.pdf"), target: "_blank", class:'banner_btn' %>
+
+      <div class="row_icons">
+        <div class ="row_cell">
+          <%= link_to (render inline: (render file: Rails.root.join('app', 'assets', 'images', 'user.svg'), class: 'svg')), about_index_path %>
+
+          <p>About Me</p>
+        </div>
+
+        <div class ="row_cell">
+          <%= link_to (render inline: (render file: Rails.root.join('app', 'assets', 'images', 'code.svg'), class: 'svg')), projects_path %>
+          <p>Recent Projects</p>
+        </div>
+
+        <div class ="row_cell">
+                  <%= link_to (render inline: (render file: Rails.root.join('app', 'assets', 'images', 'keyboard.svg'), class: 'svg')), posts_path %>
+          <p>Blog</p>
+        </div>
+
+      </div>
+  </div>
 </div>
 
 <!--ABOUT SECTION -->

@@ -12,12 +12,15 @@
       text-transform: uppercase;
       a{
         text-decoration: none;
-        color: $dark;
+        color: $white;
         &:hover{
           color:$highlight;
         }
       }
 
+    }
+    p{
+      color:$white;
     }
 
     hr{
@@ -28,6 +31,7 @@
 
 // blog posts show
 #post_show_content{
+  margin: 50px auto;
   header{
     text-align: center;
     .date{

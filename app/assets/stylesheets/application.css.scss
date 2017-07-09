@@ -132,8 +132,9 @@ hr{
 #page_title{
   text-align: center;
   border-bottom: 1px solid $border;
-  padding: 3em 0;
-  font-size: 1rem;
+  padding: 1em 0;
+  font-size: 20px;
+  color: $white;
   text-transform: uppercase;
 }
 
@@ -209,10 +210,13 @@ input[type="submit"], button{
   /*background-image: url(cliffdark.jpeg);*/
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('cliff.jpeg');
   background-repeat: no-repeat;
-  background-size:cover;
   background-position: center;
-  margin: 0;
-  padding: 0;
+  background-size: cover;
+  display: table;
+  top:0;
+  margin: auto;
+  height: 100%;
+  width: 100%
   /*
   -khtml-opacity:.50;
   -moz-opacity:.50;
@@ -345,4 +349,11 @@ h1{
   height: 100%;
   width: 100%;
   z-index: -5;
+}
+
+.white_box{
+  background: #fff;
+  opacity: 0.8;
+  padding: 20px 30px 20px 30px;
+  margin: auto;
 }

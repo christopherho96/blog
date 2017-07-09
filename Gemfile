@@ -54,6 +54,11 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  gem 'paperclip', '~> 4.3', '>= 4.3.6'
+  gem 'bootstrap-sass', '~> 3.3.6'
+  gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+  gem 'aws-sdk', '~> 2.3'
+  gem 'aws-sdk-v1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -62,9 +67,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production do
   gem 'pg';
   gem 'rails_12factor'
-  gem 'paperclip', '~> 4.3', '>= 4.3.6'
-  gem 'bootstrap-sass', '~> 3.3.6'
-  gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
-  gem 'aws-sdk', '~> 2.3'
-  gem 'aws-sdk-v1'
+
 end
