@@ -2,13 +2,41 @@
 
     <div id="posts_wrapper" class="skinny_wrapper">
 
+
       <!--loops through all posts to diplay them as listing -->
+      <!--
       <% @projects.each do |project| %>
       <div class="post">
-        <!--<p class="date"><%= project.created_at.strftime('%A, %B %d')%></p>-->
+        <p class="date"><%= project.created_at.strftime('%A, %B %d')%></p>
         <img class= "icon"><%= image_tag(project.image.url(:medium))%></p>
         <h2><a href="#"><%= link_to project.title, project %></a></h2>
         <hr>
       </div>
-      <%end %>
+      <%end %>-->
+
+
+      <div class="post_container">
+          <% @projects.each do |project| %>
+
+          <article class="card">
+          <header class="card__thumb">
+            <a href="#">
+              <%= link_to image_tag(project.image.url(:icon)), project%>
+            </a>
+          </header>
+          <div class="card__date">
+            <%= link_to project do %><span class="fa fa-angle-right fa-2x"></span><% end %>
+          </div>
+          <div class="card__body">
+            <h2 class="card__title"><a href="#"><%= link_to project.title, project %></a></h2>
+            <p class="card__description">
+              With a warning label this big, you know they gotta be fun! This is the worst part. The calm before the battle. No! The cat shelter's on to me. Yes, I saw. You were doing well, until everyone died. Daylight and everything.
+            </p>
+          </div>
+        </article>
+
+          <% end %>
+      </div>
+
+      </div>
     </div>
