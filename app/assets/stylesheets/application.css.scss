@@ -121,10 +121,14 @@ hr{
     float: right;
     padding-top: 1.4rem;
     a{
-      color: $dark;
+      color: $white;
       text-decoration: none;
       margin: 0 1rem;
       font-size: 16px;
+    }
+
+    a:hover{
+      color: $highlight;
     }
   }
 }
@@ -146,7 +150,7 @@ hr{
   border: 2px solid $border;
   padding: 1rem;
   text-decoration: none;
-  color: $dark;
+  color: $white;
   float:left;
 }
 
@@ -215,7 +219,6 @@ input[type="submit"], button{
   display: table;
   top:0;
   margin: auto;
-  height: 100%;
   width: 100%
   /*
   -khtml-opacity:.50;
@@ -280,76 +283,6 @@ h1{
 
 }
 
-.banner{
-  color:white;
-  padding:0;
-  margin: 3em auto;
-  overflow: visible;
-  text-align: center;
-  min-height: 500px;
-  p{
-    color:white;
-  }
-}
-
-.banner h1{
-  padding: 0 0 0 0;
-  margin: 0;
-  clear: both;
-  color: #ffffff;
-}
-
-.banner_btn{
-  color:#DD4C4C;
-  text-decoration: none;
-  background-color: white;
-  width: 100px;
-  padding: 1em 4.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius:100px;
-
-}
-
-
-.banner_btn:hover{
-  color:white;
-}
-
-.row_icons{
-  width: 100%;
-}
-
-.row_cell{
-  width: 200px;
-  height: 200px;
-  display:inline-block;
-  text-align: center;
-  margin: 4em 2em 0 2em;
-  border: solid 2px white;
-  border-radius:25px;
-  p{
-      color: white;
-  }
-}
-
-.row_cell svg{
-  width: 80px;
-  height: auto;
-  margin: 3.65em 0 0 0;
-  color: white;
-   -webkit-filter: invert(100%);
-}
-
-.overlay{
-  position: absolute;
-  background-color: rgba(0,0,0,0.1);
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -5;
-}
 
 .white_box{
   border-radius: 5px;
