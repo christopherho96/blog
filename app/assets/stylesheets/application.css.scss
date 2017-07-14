@@ -3,7 +3,6 @@
 @import 'normalize';
 @import 'bootstrap';
 @import 'bootstrap-sprockets';
-@import 'override.css.scss';
 @import "font-awesome";
 
 $white: #ffffff;
@@ -219,7 +218,7 @@ input[type="submit"], button{
   display: table;
   top:0;
   margin: auto;
-  width: 100%
+  width: 100%;
   /*
   -khtml-opacity:.50;
   -moz-opacity:.50;
@@ -294,5 +293,10 @@ h1{
 
 .about{
   margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.contact-page{
+  margin-top: 40px;
   margin-bottom: 50px;
 }
