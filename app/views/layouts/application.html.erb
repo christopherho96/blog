@@ -3,8 +3,8 @@
   <head>
     <title>Christopher Ho</title>
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <%= csrf_meta_tags %>
@@ -14,18 +14,19 @@
   </head>
 
   <body>
+
+    <header id = "main_navigation" class = "clearfix">
+      <%= link_to "Christopher Ho", root_path, class: "name" %>
+      <nav>
+        <%= link_to "Blog", posts_path %>
+        <%= link_to "Projects", projects_path %>
+        <%= link_to "Contact", new_contact_path %>
+        <% if user_signed_in? %>
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+        <% end %>
+      </nav>
+    </header>
     <div class ="welcome_page">
-      <header id = "main_navigation" class = "clearfix">
-        <%= link_to "Christopher Ho", root_path, class: "name" %>
-        <nav>
-          <%= link_to "Blog", posts_path %>
-          <%= link_to "Projects", projects_path %>
-          <%= link_to "Contact", new_contact_path %>
-          <% if user_signed_in? %>
-            <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-          <% end %>
-        </nav>
-      </header>
 
       <% if notice %>
       <p class="notice"><%= notice %></p>
@@ -34,21 +35,22 @@
       <%end%>
 
       <%= yield %>
-      <footer id = "main_footer">
-        <div class = "row">
-          <div class ="col-sm-6 left">
-            <p class = "copyright">&copy;2017 Christopher Ho</p>
-          </div>
-          <div class ="col-sm-6 right">
-            <nav>
-              <a href="http://twitter.com/itschrisho" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-              <a href ="http://github.com/christopherho96" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-              <a href ="https://www.linkedin.com/in/christopher-ho-8b6350133/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-            </nav>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
 
+    </div>
+
+    <footer id = "main_footer" class = "footer">
+      <div class = "row">
+        <div class ="col-sm-6 left">
+          <p class = "copyright">&copy;2017 Christopher Ho</p>
+        </div>
+        <div class ="col-sm-6 right">
+          <nav>
+            <a href="http://twitter.com/itschrisho" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            <a href ="http://github.com/christopherho96" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            <a href ="https://www.linkedin.com/in/christopher-ho-8b6350133/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

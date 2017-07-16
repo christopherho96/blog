@@ -11,6 +11,34 @@ $light: #9a9da4;
 $highlight:#8bc6db;
 $border: #e9e9e9;
 
+
+html{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('cliff.jpeg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: table;
+  top:0;
+  margin: auto;
+  width: 100%;
+}
+
+
+.welcome_page{
+  /*background-image: url(cliffdark.jpeg);*/
+/*
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: table;
+  top:0;
+  margin: auto;
+  width: 100%;*/
+}
+
+
 *{
   box-sizing: border-box;
   //using box-sizing: border-box makes sure padding added does not add to total width of column
@@ -18,6 +46,7 @@ $border: #e9e9e9;
 
 body{
   font-family: 'Raleway', sans-serif !important;
+  background-color: transparent;
 }
 
 
@@ -114,19 +143,24 @@ hr{
 }
 
 #main_navigation {
-  padding: 2.5em 5%;
+  padding: 1em 5%;
   border-bottom: 1px solid $border;
+  a{
+    color: $white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 16px;
+  }
+
+  a:hover{
+    text-decoration: none;
+  }
   nav{
     float: right;
     padding-top: 1.4rem;
-    a{
-      color: $white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-size: 16px;
-    }
 
     a:hover{
+      text-decoration: none;
       color: $highlight;
     }
   }
@@ -209,24 +243,6 @@ input[type="submit"], button{
 @import 'welcome';
 @import 'post_projects';
 
-.welcome_page{
-  /*background-image: url(cliffdark.jpeg);*/
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('cliff.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: table;
-  top:0;
-  margin: auto;
-  width: 100%;
-  /*
-  -khtml-opacity:.50;
-  -moz-opacity:.50;
-  -ms-filter:"alpha(opacity=50)";
-  filter:alpha(opacity=50);
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
-  opacity:0.5;*/
-}
 
 h1{
   font-size: 56px;
