@@ -1,18 +1,25 @@
 <div class = "content">
   <div class ="banner">
-    <div class = "overlay">
-    </div>
       <h1>CHRISTOPHER HO</h1>
-      <p>Engineering Student at the University of Waterloo</p>
-
+      <h4>Engineering Student at the University of Waterloo</h4>
       <%= link_to "Resume", asset_path("resume.pdf"), target: "_blank", class:'banner_btn' %>
 
-      <div class="row_icons">
-        <div class ="row_cell">
-          <%= link_to (render inline: (render file: Rails.root.join('app', 'assets', 'images', 'user.svg'), class: 'svg')), about_index_path %>
+      <div class = "skinny_wrapper wrapper_padding">
+        <div class = "about">
+            <div class ="white_box">
+              <%= image_tag("portrait.jpg", :alt => "rss feed", :class=> "img-circular") %>
+              <p>My name is Christopher Ho and I am currently a 2B Mechnical Engineering student at the University of Waterloo.</p>
+              <p>Like many of my fellow engineering colleagues, I have a passion for creating something new, innovative and unique. My first programming language I learned was during my first year which was an introduction to programming course using C#. Since then, I have developed a passion for programming and taken the initiative to developing my own iOS and web applicaitons. I hope to one day gain practical experience in the application development work field.</p>
+              <p>My hobbies consist of basketball, travelling and being a fitness enthusiast. In addition, I am addicted to poker. If you ever need an extra player at your table, send me a message!</p>
+              <p>**SOME PARTS OF THE WEBSITE ARE CURRENTLY UNDER CONSTRUCTION**</p>
+            </div>
+          </div>
+      </div>
 
-          <p>About Me</p>
-        </div>
+      <h3>Check out my blog and recent projects!</h3>
+
+      <div class="row_icons">
+
 
         <div class ="row_cell">
           <%= link_to (render inline: (render file: Rails.root.join('app', 'assets', 'images', 'code.svg'), class: 'svg')), projects_path %>
@@ -20,10 +27,10 @@
         </div>
 
         <div class ="row_cell">
-                  <%= link_to (render inline: (render file: Rails.root.join('app', 'assets', 'images', 'keyboard.svg'), class: 'svg')), posts_path %>
+          <%= link_to (render inline: (render file: Rails.root.join('app', 'assets', 'images', 'keyboard.svg'), class: 'svg')), posts_path %>
           <p>Blog</p>
         </div>
-        <p>SOME PARTS OF THE WEBSITE ARE CURRENTLY UNDER CONSTRUCTION</p>
+
       </div>
   </div>
 </div>

@@ -4,7 +4,7 @@
 
 
       <!--loops through all posts to diplay them as listing -->
-      <!--
+
       <% @projects.each do |project| %>
       <div class="post">
         <p class="date"><%= project.created_at.strftime('%A, %B %d')%></p>
@@ -12,9 +12,11 @@
         <h2><a href="#"><%= link_to project.title, project %></a></h2>
         <hr>
       </div>
-      <%end %>-->
+      <%end %>
+    </div>
 
 
+<!--
       <div class="post_container">
           <% @projects.each do |project| %>
 
@@ -39,4 +41,4 @@
       </div>
 
       </div>
-    </div>
+    </div> -->

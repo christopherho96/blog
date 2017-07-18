@@ -228,14 +228,26 @@ margin-bottom: 30px;
   overflow: visible;
   text-align: center;
   p{
-    color:white;
   }
+
+  .wrapper_padding{
+    padding: 4rem 0 0 0;
+  }
+
 }
 
 .banner h1{
   padding: 0 0 0 0;
   margin: 0;
   clear: both;
+  color: #ffffff;
+}
+.banner h3{
+  color: #ffffff;
+}
+
+.banner h4{
+  margin-bottom: 2em;
   color: #ffffff;
 }
 
