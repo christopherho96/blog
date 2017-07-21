@@ -59,7 +59,6 @@ group :production do
   gem 'pg';
   gem 'rails_12factor'
 
-
   gem 'paperclip', '~> 4.3', '>= 4.3.6'
   gem 'bootstrap-sass', '~> 3.3.6'
   gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
@@ -70,6 +69,7 @@ group :production do
   gem 'will_paginate', '~> 3.1', '>= 3.1.5'
   gem 'mail_form', '~> 1.5', '>= 1.5.1'
   gem 'devise', '~> 4.2'
+
 
 
 end
