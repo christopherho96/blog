@@ -1,3 +1,4 @@
+
 <div class = "content">
   <div class ="banner">
       <h1>CHRISTOPHER HO</h1>
@@ -20,14 +21,15 @@
 
       <div class="row_icons">
 
-
         <div class ="row_cell">
-          <%= link_to (render inline: (render file: Rails.root.join('app', 'assets', 'images', 'code.svg'), class: 'svg')), projects_path %>
+          <%= link_to projects_path do %><span class="fa fa-code fa-4x"></span><% end %>
           <p>Recent Projects</p>
         </div>
 
+
+
         <div class ="row_cell">
-          <%= link_to (render inline: (render file: Rails.root.join('app', 'assets', 'images', 'keyboard.svg'), class: 'svg')), posts_path %>
+          <%= link_to posts_path do %><span class="fa fa-keyboard-o fa-4x"></span><% end %>
           <p>Blog</p>
         </div>
 
