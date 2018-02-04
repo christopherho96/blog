@@ -64,7 +64,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production do
   gem 'rails_12factor'
 
-  gem 'paperclip', '~> 4.3', '>= 4.3.6'
+  gem 'paperclip', '~> 5.2.1', '>= 4.3.6'
   gem 'bootstrap-sass', '~> 3.3.6'
   gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
   gem 'aws-sdk', '~> 2.3'
